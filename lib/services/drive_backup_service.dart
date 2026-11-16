@@ -179,7 +179,7 @@ class DriveBackupService {
     return true;
   }
 
-  Future> loadSettings() async {
+  Future<Map<String, bool>> loadSettings() async {
     final prefs = await SharedPreferences.getInstance();
     return {
       keyWifiOnly: prefs.getBool(keyWifiOnly) ?? true,
