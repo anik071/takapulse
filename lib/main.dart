@@ -27,7 +27,7 @@ Future<void> main() async {
     'takapulse-monthly-pdf-check',
     PdfReportService.monthEndTaskName,
     frequency: const Duration(hours: 24),
-    existingWorkPolicy: ExistingWorkPolicy.keep,
+    existingWorkPolicy: ExistingPeriodicWorkPolicy.keep,
   );
 
   runApp(const TakaPulseApp());
